@@ -1,7 +1,7 @@
 <?php
 
 require 'functions.php';
-$cmb = query("SELECT * FROM calon_mhs");
+$camaba = query("SELECT * FROM calon_mhs");
 ?>
 
 <!doctype html>
@@ -80,14 +80,10 @@ $cmb = query("SELECT * FROM calon_mhs");
                         <?php $no = 1; ?>
                         <?php foreach ($camaba as $cmb) : ?>
                             <tr>
-                                <th scope="row"><?php echo $cmb[0]; ?></th>
-                                <td><?php echo $cmb[1]; ?></td>
-                                <td><?php echo $cmb[2]; ?></td>
-                                <td><?php echo $cmb[3]; ?></td>
-                                <td><?php echo $cmb[4]; ?></td>
-                                <td><?php echo $cmb[5]; ?></td>
-                                <td><img src="image/foto1.png" width="500px"></td>
-                                <td><i class="fas fa-edit"></i>|| <i class="fas fa-trash"></i></td>
+                                <th scope="row"><?php echo $no; ?></th>
+                                <td><?php echo $cmb['Nama']; ?></td>
+                                <td><img src="image/<?php echo $cmb['foto_maba']; ?>" width="100px"></td>
+                                <td><a href="detail.php? id=<?= $cmb['id']; ?>" class="btn btn-warning" role="button">Detail</a></td>
                             </tr>
                             <?php $no++ ?>
                         <?php endforeach ?>
