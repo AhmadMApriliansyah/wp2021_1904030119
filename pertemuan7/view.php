@@ -49,7 +49,7 @@ include 'koneksi.php';
                     <hr>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#"><i class="fas fa-user-edit"></i> Input Camaba</a>
+                    <a class="nav-link text-white" href="tambah.php"><i class="fas fa-user-edit"></i> Input Camaba</a>
                     <hr>
                 </li>
                 <li class="nav-item">
