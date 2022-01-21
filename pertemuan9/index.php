@@ -1,7 +1,7 @@
 <?php
-date_default_timezone_get("asia/jakarta");
+
 require 'functions.php';
-$camaba = query("SELECT * FROM calon_mhs");
+$cmb = query("SELECT * FROM calon_mhs");
 ?>
 
 <!doctype html>
