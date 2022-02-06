@@ -93,7 +93,7 @@ include 'koneksi.php';
                                 <td><i class="fas fa-edit"></i>|| <i class="fas fa-trash"></i></td>
                             </tr>
                             <?php $no++ ?>
-                        <?php } ?>
+                        <?php ?>
 
                     </tbody>
                 </table>

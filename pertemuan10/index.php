@@ -82,7 +82,7 @@ $camaba = query("SELECT * FROM calon_mhs");
                             <tr>
                                 <th scope="row"><?php echo $no; ?></th>
                                 <td><?php echo $cmb['Nama']; ?></td>
-                                <td><img src="image/<?php echo $cmb['foto_maba']; ?>" width="100px"></td>
+                                <td><img src="image/foto1.png.png?php echo $cmb['foto_maba']; ?>" width="100px"></td>
                                 <td><a href="detail.php? id=<?= $cmb['id']; ?>" class="btn btn-warning" role="button">Detail</a></td>
                             </tr>
                             <?php $no++ ?>

@@ -90,19 +90,19 @@
                                               <p><b>data Mahasiswa tidak ditemukan</b></p>
                                           </td>
                                       </tr>
-                                      <<?php endif; ?> <tbody>
-                                          <?php $no = 1; ?>
-                                          <?php foreach ($camaba as $cmb) : ?>
-                                              <tr>
-                                                  <th scope="row"><?php echo $no; ?></th>
-                                                  <td><?php echo $cmb['Nama']; ?></td>
-                                                  <td><img src="image/<?php echo $cmb['foto_maba']; ?>" width="100px"></td>
-                                                  <td><a href="detail.php? id=<?= $cmb['id']; ?>" class="btn btn-warning" role="button">Detail</a></td>
-                                              </tr>
-                                              <?php $no++ ?>
-                                          <?php endforeach ?>
+                                  <?php endif; ?> <tbody>
+                                      <?php $no = 1; ?>
+                                      <?php foreach ($camaba as $cmb) : ?>
+                                          <tr>
+                                              <th scope="row"><?php echo $no; ?></th>
+                                              <td><?php echo $cmb['Nama']; ?></td>
+                                              <td><img src="image/<?php echo $cmb['foto_maba']; ?>" width="100px"></td>
+                                              <td><a href="detail.php? id=<?= $cmb['id']; ?>" class="btn btn-warning" role="button">Detail</a></td>
+                                          </tr>
+                                          <?php $no++ ?>
+                                      <?php endforeach ?>
 
-                                          </tbody>
+                                  </tbody>
                               </table>
                           </table>
                       </div>
